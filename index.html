@@ -642,6 +642,10 @@
         .project-icon-shenpingan {
             background-color: #26A69A;
         }
+
+        .project-icon-agent {
+            background-color: #E67E22;
+        }
         
         .project-info h3 {
             margin-bottom: 5px;
@@ -1004,6 +1008,16 @@
                             <div class="project-info">
                                 <h3>美术资产管理平台MUSE</h3>
                                 <p>网易互动娱乐事业群美术资产管理平台</p>
+                            </div>
+                            <button class="view-project-btn">查看作品</button>
+                        </div>
+                        <div class="project-item" onclick="openModal('agentModal')">
+                            <div class="project-icon project-icon-agent">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="project-info">
+                                <h3>本地通用Agent</h3>
+                                <p>AI智能助手平台</p>
                             </div>
                             <button class="view-project-btn">查看作品</button>
                         </div>
@@ -1425,6 +1439,55 @@
                     <span class="indicator" onclick="goToSlide('museModal', 1)"></span>
                     <span class="indicator" onclick="goToSlide('museModal', 2)"></span>
                     <span class="indicator" onclick="goToSlide('museModal', 3)"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="agentModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('agentModal')">&times;</span>
+            <div class="modal-header">
+                <h2>本地通用Agent</h2>
+            </div>
+            <div class="image-slider">
+                <div class="slider-container">
+                    <div class="slider-wrapper">
+                        <div class="slide active">
+                            <img src="本地通用Agent/对话.png" alt="对话" style="width: 100%; height: auto; max-height: 500px; object-fit: contain; border-radius: 8px;">
+                            <div class="slide-caption">对话</div>
+                        </div>
+                        <div class="slide">
+                            <img src="本地通用Agent/技能管咯.png" alt="技能管理" style="width: 100%; height: auto; max-height: 500px; object-fit: contain; border-radius: 8px;">
+                            <div class="slide-caption">技能管理</div>
+                        </div>
+                        <div class="slide">
+                            <img src="本地通用Agent/MCP服务管理.png" alt="MCP服务管理" style="width: 100%; height: auto; max-height: 500px; object-fit: contain; border-radius: 8px;">
+                            <div class="slide-caption">MCP服务管理</div>
+                        </div>
+                        <div class="slide">
+                            <img src="本地通用Agent/模型配置.png" alt="模型配置" style="width: 100%; height: auto; max-height: 500px; object-fit: contain; border-radius: 8px;">
+                            <div class="slide-caption">模型配置</div>
+                        </div>
+                        <div class="slide">
+                            <img src="本地通用Agent/知识库.png" alt="知识库" style="width: 100%; height: auto; max-height: 500px; object-fit: contain; border-radius: 8px;">
+                            <div class="slide-caption">知识库</div>
+                        </div>
+                        <div class="slide">
+                            <img src="本地通用Agent/角色管理.png" alt="角色管理" style="width: 100%; height: auto; max-height: 500px; object-fit: contain; border-radius: 8px;">
+                            <div class="slide-caption">角色管理</div>
+                        </div>
+                    </div>
+                    <button class="slider-btn prev" onclick="changeSlide('agentModal', -1)"><i class="fas fa-chevron-left"></i></button>
+                    <button class="slider-btn next" onclick="changeSlide('agentModal', 1)"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="slide-indicators">
+                    <span class="indicator active" onclick="goToSlide('agentModal', 0)"></span>
+                    <span class="indicator" onclick="goToSlide('agentModal', 1)"></span>
+                    <span class="indicator" onclick="goToSlide('agentModal', 2)"></span>
+                    <span class="indicator" onclick="goToSlide('agentModal', 3)"></span>
+                    <span class="indicator" onclick="goToSlide('agentModal', 4)"></span>
+                    <span class="indicator" onclick="goToSlide('agentModal', 5)"></span>
                 </div>
             </div>
         </div>
